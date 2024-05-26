@@ -11,6 +11,7 @@
 
 /* 2. sticky And Scroll UP */
     $(window).on('scroll', function () {
+      return;
       var scroll = $(window).scrollTop();
       if (scroll < 400) {
         $(".header-sticky").removeClass("sticky-bar");
@@ -220,7 +221,7 @@
     
 
     // Use this for real timer date
-    var timerdate = "2023/08/13 07:00:00";
+    var timerdate = "2024/08/01 00:00:00";
 
 	$("#countdown").countdown(timerdate, function(event) {
         $(this).html(event.strftime("<div class='cd-item'><span>%D</span><p>Hari</p> </div>" + "<div class='cd-item'><span>%H</span><p>Jam</p> </div>" + "<div class='cd-item'><span>%M</span><p>Men</p> </div>" + "<div class='cd-item'><span>%S</span><p>Det</p> </div>"));

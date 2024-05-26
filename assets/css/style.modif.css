@@ -1,0 +1,78 @@
+.header-area .main-header .main-menu ul li a {
+    text-decoration: none;
+    position: relative;
+}
+.header-area .main-header .main-menu ul li a:hover {
+    text-decoration: none;
+    color: #112957;
+}
+.header-area .main-header .main-menu ul li > a:after {
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #112957;
+    left: 50%;
+    bottom: 35%;
+    transition: all .2s ease;
+}
+.header-area .main-header .main-menu ul li:hover > a:after {
+    width: 75%;
+    left: 12.5%;
+}
+.header-area .main-header .main-menu ul.submenu li a:after {
+    display: none;
+}
+.header-area .main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: rgba(255,255,255,.8);
+    backdrop-filter: blur(20px);
+}
+.about-low-area .about-img .about-back-img {
+    position: unset;
+    text-align: center;
+}
+.slider-area {
+    background-image: none;
+}
+
+:root {
+    --background-slideshow-height: 100vh;
+}
+.background-slideshow {
+    position: absolute;
+    width: 100%;
+    height: var(--background-slideshow-height);
+    overflow: hidden;
+}
+    .background-slideshow .background-slideshow-images img {
+        object-fit: cover;
+        width: 100%;
+        height: var(--background-slideshow-height);
+        position: absolute;
+        opacity: 0;
+        transition: opacity 1s ease;
+    }
+    .background-slideshow .background-slideshow-overlay {
+        width: 100%;
+        height: var(--background-slideshow-height);
+        background-color: rgba(51, 19, 145, .3);
+        position: absolute;
+    }
+    .background-slideshow .background-slideshow-overlay:after {
+        content: '';
+        width: 100%;
+        height: var(--background-slideshow-height);
+        position: absolute;
+        background: linear-gradient(to right, rgba(51, 19, 145, 1), rgba(51, 19, 145, .8), rgba(51, 19, 145, .3));
+    }
+
+@media (max-width: 575px) {
+    :root {
+        --background-slideshow-height: 500px;
+    }
+}

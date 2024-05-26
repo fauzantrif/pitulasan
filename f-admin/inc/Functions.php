@@ -88,5 +88,9 @@
             $lebihseminggu = $harinya.", ".date("j", $datetime)." ".$theBulan[date("n", $datetime)-1]." ".date("Y", $datetime);
             return $lebihseminggu." pukul ".date("H:i", $datetime);
         }
+
+        function getTimestamp(){
+            return date("Y-m-d H:i:s");
+        }
     }
 ?>
