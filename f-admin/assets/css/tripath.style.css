@@ -1,0 +1,46 @@
+.pagination.pagination-primary .page-item.active>.page-link, .pagination.pagination-primary .page-item.active>.page-link:focus, .pagination.pagination-primary .page-item.active>.page-link:hover {
+    color: #fff;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+small.description {
+    font-size: .75em;
+    opacity: .7;
+}
+
+.btn.btn-circle {
+    border-radius: 50%;
+}
+.spinner-border-sm {
+    width: 1rem;
+    height: 1rem;
+    border-width: 0.2em;
+}
+.form-text {
+    font-size: .7em;
+}
+
+.list-group-striped>.list-group-item:nth-of-type(even) {
+    background-color: var(--bs-gray-100);
+}
+
+.navbar-vertical.navbar-expand-xs {
+    z-index: 10;
+}
+
+@media (max-width: 767.98px){
+    .navbar-collapse .navbar-nav {
+        width: 50%;
+    }
+}
+
+.dark-version .form-control {
+    background-color: #051139;
+    border-color: var(--bs-gray-700);
+}
+.dark-version .card.border {
+    border-color: var(--bs-gray-600) !important;
+}
