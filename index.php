@@ -74,7 +74,7 @@
                                         </li>
                                         <li><a href="contact.html">Kontak</a></li>
                                         <li class="d-block d-lg-none">
-                                            <button href="#" class="btn header-btn mt-2 w-100" style="">Daftar Sekarang</button>
+                                            <button href="#" class="btn header-btn mt-2 w-100">Daftar Sekarang</button>
                                         </li>
                                     </ul>
                                 </nav>
