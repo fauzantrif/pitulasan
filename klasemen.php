@@ -12,7 +12,6 @@
 <head>
     <title> FORMASI 103: Klasemen Lomba </title>
     <?php include_once("comps/head.scripts.php"); ?>
-    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- ? Preloader Start -->
