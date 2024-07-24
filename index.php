@@ -50,7 +50,7 @@
                                 <h1 data-animation="fadeInLeft" data-delay=".5s">Dirgahayu Republik Indonesia ke-79</h1>
                                 <!-- Hero-btn -->
                                 <div class="slider-btns">
-                                    <a data-animation="fadeInLeft" data-delay="1.0s" href="industries.html" class="btn hero-btn">Daftar</a>
+                                    <a data-animation="fadeInLeft" data-delay="1.0s" href="#start-explore" class="btn hero-btn">Mulai Jelajah</a>
                                     <a data-animation="fadeInRight" data-delay="1.0s" class="popup-video video-btn"  href="https://www.youtube.com/watch?v=up68UAfH0d0">
                                         <i class="fas fa-play"></i></a>
                                     <p class="video-cap d-none d-sm-blcok" data-animation="fadeInRight" data-delay="1.0s">Story Vidoe<br> Watch</p>
@@ -60,28 +60,6 @@
                     </div>
                 </div>          
             </div>
-            <!-- Single Slider -->
-            <?php /*
-            <div class="single-slider slider-height d-flex align-items-center">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-8 col-lg-8 col-md-9 col-sm-10">
-                            <div class="hero__caption">
-                                <span data-animation="fadeInLeft" data-delay=".1s">Committed to success</span>
-                                <h1 data-animation="fadeInLeft" data-delay=".5s">Digital Conference For Designers</h1>
-                                <!-- Hero-btn -->
-                                <div class="slider-btns">
-                                    <a data-animation="fadeInLeft" data-delay="1.0s" href="industries.html" class="btn hero-btn">Download</a>
-                                    <a data-animation="fadeInRight" data-delay="1.0s" class="popup-video video-btn"  href="https://www.youtube.com/watch?v=up68UAfH0d0">
-                                        <i class="fas fa-play"></i></a>
-                                    <p class="video-cap d-none d-sm-blcok" data-animation="fadeInRight" data-delay="1.0s">Story Vidoe<br> Watch</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>          
-            </div>
-            */ ?>
         </div>
         <!-- Counter Section Begin -->
         <div class="counter-section d-none d-sm-block">
@@ -157,7 +135,7 @@
     </div>
     <!-- slider Area End-->
     <!--? About Law Start-->
-    <section class="about-low-area section-padding2">
+    <section class="about-low-area section-padding2" id="start-explore">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-12">
@@ -171,9 +149,9 @@
                     </div>
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-10">
-                            <div class="single-caption mb-20">
-                                <div class="caption-icon">
-                                    <span class="flaticon-communications-1"></span>
+                            <div class="single-caption mb-20 align-items-start">
+                                <div class="caption-icon pt-3">
+                                    <span class="fas fa-location-dot"></span>
                                 </div>
                                 <div class="caption">
                                     <h5>Tempat</h5>
@@ -182,9 +160,9 @@
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-10">
-                            <div class="single-caption mb-20">
-                                <div class="caption-icon">
-                                    <span class="flaticon-education"></span>
+                            <div class="single-caption mb-20 align-items-start">
+                                <div class="caption-icon pt-3">
+                                    <span class="fas fa-calendar-days"></span>
                                 </div>
                                 <div class="caption">
                                     <h5>Waktu</h5>
@@ -219,43 +197,23 @@
                 <div class="col-lg-5 col-md-8">
                     <!-- Section Tittle -->
                     <div class="section-tittle section-tittle2 mb-50">
-                        <h2>Our Top Genaral Sponsors.</h2>
-                        <p>There arge many variations ohf passages of sorem gp ilable, but the majority have ssorem gp iluffe.</p>
+                        <h2>Tim Siap Tanding.</h2>
+                        <p>Beberapa tim sudah siap untuk bertanding demi menyemarakkan kemerdekaan Republik Indonesia.</p>
                     </div>
                 </div>
                 <div class="col-lg-7">
                     <div class="logo-area">
                         <div class="row">
+                            <?php
+                                $teams = $database->query("SELECT * FROM teams");
+                                foreach($teams['data'] as $team){
+                            ?>
                             <div class="col-lg-4 col-md-4 col-sm-6">
-                                <div class="single-logo mb-30">
-                                    <img src="assets/img/gallery/cisco_brand.png" alt="">
+                                <div class="single-logo mb-5 text-center">
+                                    <img src="assets/img/teams/<?= $team['logo'] ?>" class="img-fluid rounded-circle" style="height: 128px;" alt="<?= $team['name'] ?>">
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-4 col-sm-6">
-                                <div class="single-logo mb-30">
-                                    <img src="assets/img/gallery/cisco_brand2.png" alt="">
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-6">
-                                <div class="single-logo mb-30">
-                                    <img src="assets/img/gallery/cisco_brand3.png" alt="">
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-6">
-                                <div class="single-logo mb-30">
-                                    <img src="assets/img/gallery/cisco_brand4.png" alt="">
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-6">
-                                <div class="single-logo mb-30">
-                                    <img src="assets/img/gallery/cisco_brand5.png" alt="">
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-6">
-                                <div class="single-logo mb-30">
-                                    <img src="assets/img/gallery/cisco_brand6.png" alt="">
-                                </div>
-                            </div>
+                            <?php } ?>
                         </div>
                     </div>
                 </div>

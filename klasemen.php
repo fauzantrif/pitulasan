@@ -287,7 +287,7 @@
                         <div class="tab-pane fade" id="klasemen-peserta" role="tabpanel" aria-labelledby="profile-tab">
                             <div class="col mx-auto" style="max-width: 800px;">
                                 <h4 class="my-4">Klasemen Peserta</h4>
-                                <div class="list-group list-group-flush shadow">
+                                <div class="list-group shadow">
                                     <?php
                                         $participant_ranks = $database->query("SELECT participant.*, teams.name AS team_name, teams.logo AS team_logo, COALESCE(SUM(competition_transactions.point), 0) AS total_points, COUNT(competition_transactions.id) AS matches_count FROM participant LEFT JOIN competition_transactions ON participant.id = competition_transactions.id_participant LEFT JOIN teams ON teams.id = participant.team WHERE participant.team IS NOT NULL GROUP BY participant.id ORDER BY total_points DESC");
                                         $p = 0;

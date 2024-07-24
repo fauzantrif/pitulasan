@@ -53,14 +53,19 @@
                         </li>
                     </ul>
                     <div class="tab-content pt-4" id="myTabContent">
-                        <div class="tab-pane fade" id="klasemen-timnlomba" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="tab-pane fade show active" id="klasemen-timnlomba" role="tabpanel" aria-labelledby="home-tab">
                             <div class="row">
                                 <div class="col-12 text-center">
                                     <img src="./assets/img/Grafik-Pertandingan.png" class="img-fluid" alt="Grafik pertandingan">
                                 </div>
                             </div>
+                            <div class="d-flex justify-content-center mt-4">
+                                <div>
+                                    <a href="" class="btn bg-primary">Peraturan Pertandingan</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="tab-pane fade show active" id="klasemen-peserta" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="tab-pane fade" id="klasemen-peserta" role="tabpanel" aria-labelledby="profile-tab">
                             <div class="col mx-auto" style="">
                                 <?php
                                     $json_file = __DIR__ . "/assets/json/103-cup.json";
