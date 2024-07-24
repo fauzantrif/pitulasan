@@ -1,3 +1,4 @@
 RewriteEngine on
 
 RewriteRule ^klasemen$ klasemen.php [L]
+RewriteRule ^103-cup$ 103-cup.php [L]

@@ -1,0 +1,111 @@
+[
+    {
+        "name": "Pertandingan hari ke - 1",
+        "date": "Senin, 5 Agustus 2024",
+        "matches": [
+            {
+                "match-name": "Pertandingan 1",
+                "match-time": "20:00 WIB",
+                "team-1-name": "-",
+                "team-1-score": 0,
+                "team-2-name": "-",
+                "team-2-score": 0,
+                "current-time": 0,
+                "penalty": false,
+                "match-events": [],
+                "match-events-example": [
+                    {
+                        "minute": 23,
+                        "player": "Sumanto",
+                        "team": 1,
+                        "event": "goal"
+                    }
+                ]
+            },
+            {
+                "match-name": "Pertandingan 2",
+                "match-time": "21:00 WIB",
+                "team-1-name": "-",
+                "team-1-score": 0,
+                "team-2-name": "-",
+                "team-2-score": 0,
+                "current-time": 0,
+                "penalty": false,
+                "match-events": []
+            }
+        ]
+    },
+    {
+        "name": "Pertandingan hari ke - 2",
+        "date": "Selasa, 6 Agustus 2024",
+        "matches": [
+            {
+                "match-name": "Pertandingan 3",
+                "match-time": "20:00 WIB",
+                "team-1-name": "-",
+                "team-1-score": 0,
+                "team-2-name": "-",
+                "team-2-score": 0,
+                "current-time": 0,
+                "penalty": false,
+                "match-events": []
+            },
+            {
+                "match-name": "Pertandingan 4",
+                "match-time": "21:00 WIB",
+                "team-1-name": "-",
+                "team-1-score": 0,
+                "team-2-name": "-",
+                "team-2-score": 0,
+                "current-time": 0,
+                "penalty": false,
+                "match-events": []
+            }
+        ]
+    },
+    {
+        "name": "Pertandingan hari ke - 3",
+        "date": "Rabu, 7 Agustus 2024",
+        "matches": [
+            {
+                "match-name": "Semi-Final 1",
+                "match-time": "20:00 WIB",
+                "team-1-name": "-",
+                "team-1-score": 0,
+                "team-2-name": "-",
+                "team-2-score": 0,
+                "current-time": 0,
+                "penalty": false,
+                "match-events": []
+            },
+            {
+                "match-name": "Semi-Final 2",
+                "match-time": "21:00 WIB",
+                "team-1-name": "-",
+                "team-1-score": 0,
+                "team-2-name": "-",
+                "team-2-score": 0,
+                "current-time": 0,
+                "penalty": false,
+                "match-events": []
+            }
+        ]
+    },
+    {
+        "name": "Pertandingan hari ke - 4",
+        "date": "Sabtu, 10 Agustus 2024",
+        "matches": [
+            {
+                "match-name": "Final",
+                "match-time": "20:00 WIB",
+                "team-1-name": "-",
+                "team-1-score": 0,
+                "team-2-name": "-",
+                "team-2-score": 0,
+                "current-time": 0,
+                "penalty": false,
+                "match-events": []
+            }
+        ]
+    }
+]
