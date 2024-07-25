@@ -1,6 +1,6 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="">
+    <meta name="description" content="Semarak Kemerdekaan Republik Indonesia ke-79 RT.001/RW.003 Kel. Kembaran Kulon, Purbalingga, Jawa Tengah.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
 
@@ -18,26 +18,3 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/style.modif.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<style media="screen">
-		hr.hr-text {
-			position: relative;
-			border: none;
-			height: 1px;
-			background: #999;
-		}
-
-		hr.hr-text::before {
-			content: attr(data-content);
-			display: inline-block;
-			background: #fff;
-			font-weight: bold;
-			font-size: 0.85rem;
-			color: #999;
-			border-radius: 30rem;
-			padding: 0.2rem 2rem;
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-		}
-	</style>
