@@ -15,16 +15,7 @@
 </head>
 <body>
     <!-- ? Preloader Start -->
-    <div id="preloader-active">
-        <div class="preloader d-flex align-items-center justify-content-center">
-            <div class="preloader-inner position-relative">
-                <div class="preloader-circle"></div>
-                <div class="preloader-img pere-text">
-                    <img src="assets/img/logo/loder.png" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
+    <?php include_once("comps/body.preloader.php"); ?>
     <!-- Preloader Start -->
 <?php include_once("comps/body.navbar.php"); ?>
 <main>
@@ -51,7 +42,7 @@
                                 <!-- Hero-btn -->
                                 <div class="slider-btns">
                                     <a data-animation="fadeInLeft" data-delay="1.0s" href="#start-explore" class="btn hero-btn">Mulai Jelajah</a>
-                                    <a data-animation="fadeInRight" data-delay="1.0s" class="popup-video video-btn"  href="https://www.youtube.com/watch?v=up68UAfH0d0">
+                                    <a data-animation="fadeInRight" data-delay="1.0s" class="popup-video video-btn"  href="https://www.youtube.com/watch?v=TY75neyFZm8">
                                         <i class="fas fa-play"></i></a>
                                     <p class="video-cap d-none d-sm-blcok" data-animation="fadeInRight" data-delay="1.0s">Story Vidoe<br> Watch</p>
                                 </div>

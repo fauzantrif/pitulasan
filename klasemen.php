@@ -15,16 +15,7 @@
 </head>
 <body>
     <!-- ? Preloader Start -->
-    <div id="preloader-active">
-        <div class="preloader d-flex align-items-center justify-content-center">
-            <div class="preloader-inner position-relative">
-                <div class="preloader-circle"></div>
-                <div class="preloader-img pere-text">
-                    <img src="assets/img/logo/loder.png" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
+    <?php include_once("comps/body.preloader.php"); ?>
     <!-- Preloader Start -->
 <?php include_once("comps/body.navbar.php"); ?>
 <main>
@@ -286,13 +277,17 @@
                         </div>
                         <div class="tab-pane fade" id="klasemen-peserta" role="tabpanel" aria-labelledby="profile-tab">
                             <div class="col mx-auto" style="max-width: 800px;">
-                                <h4 class="my-4">Klasemen Peserta</h4>
+                                <?php
+                                    $participant_groups = $database->query("SELECT grouping FROM participant GROUP BY grouping ORDER BY grouping ASC");
+                                    foreach($participant_groups['data'] as $participant_group){
+                                ?>
+                                <h4 class="my-4 mt-5"><?= $participant_group['grouping'] ?></h4>
                                 <div class="list-group shadow">
                                     <?php
-                                        $participant_ranks = $database->query("SELECT participant.*, teams.name AS team_name, teams.logo AS team_logo, COALESCE(SUM(competition_transactions.point), 0) AS total_points, COUNT(competition_transactions.id) AS matches_count FROM participant LEFT JOIN competition_transactions ON participant.id = competition_transactions.id_participant LEFT JOIN teams ON teams.id = participant.team WHERE participant.team IS NOT NULL GROUP BY participant.id ORDER BY total_points DESC");
-                                        $p = 0;
-                                        foreach($participant_ranks['data'] as $participant_rank){
-                                            $p++;
+                                            $participant_ranks = $database->query("SELECT participant.*, teams.name AS team_name, teams.logo AS team_logo, COALESCE(SUM(competition_transactions.point), 0) AS total_points, COUNT(competition_transactions.id) AS matches_count FROM participant LEFT JOIN competition_transactions ON participant.id = competition_transactions.id_participant LEFT JOIN teams ON teams.id = participant.team WHERE participant.grouping = '{$participant_group['grouping']}' GROUP BY participant.id ORDER BY total_points DESC");
+                                            $p = 0;
+                                            foreach($participant_ranks['data'] as $participant_rank){
+                                                $p++;
                                     ?>
                                     <a class="list-group-item list-group-item-action">
                                         <div class="d-flex align-items-center">
@@ -301,7 +296,7 @@
                                             </div>
                                             <div class="flex-fill me-4">
                                                 <div><?= $participant_rank['fullname'] ?></div>
-                                                <small class="opacity-75">Tim <?= $participant_rank['team_name'] ?></small>
+                                                <small class="opacity-75"><?= ($participant_rank['team_name'] !== null) ? "Tim " . $participant_rank['team_name'] : "-" ?></small>
                                             </div>
                                             <div class="me-4 fs-5 text-end">
                                                 <div class="small" style="font-size: 0.75rem; line-height: 1.10;">Tanding</div>
@@ -315,7 +310,7 @@
                                     </a>
                                     <?php } ?>
                                 </div>
-                                
+                                <?php } ?>
                             </div>
                         </div>
                     </div>
