@@ -35,6 +35,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
+                    <?php /*
                     <ul class="nav nav-pills justify-content-center" id="myTab" role="tablist" style="--bs-link-color: #2e0e8c; --bs-nav-pills-link-active-bg: #2e0e8c;">
                         <li class="nav-item" role="presentation">
                             <button class="nav-link active" id="klasemen-timnlomba-tab" data-bs-toggle="tab" data-bs-target="#klasemen-timnlomba" type="button" role="tab" aria-controls="home" aria-selected="true">Tim &amp; Lomba</button>
@@ -314,6 +315,14 @@
                             </div>
                         </div>
                     </div>
+                    */ ?>
+
+                    <div class="text-center">
+                        <img src="assets/img/animated/roadblock.gif" class="img-fluid mb-4" alt="Not Available" style="width: 180px;">
+                        <h2>Maaf! Belum Tersedia.</h2>
+                        <p>Fitur ini belum tersedia atau sedang dalam perbaikan.</p>
+                    </div>
+
                 </div>
             </div>
         </div>
