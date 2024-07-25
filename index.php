@@ -129,7 +129,7 @@
     <section class="about-low-area section-padding2" id="start-explore">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-12">
+                <div class="col-lg-8 col-md-12">
                     <div class="about-caption mb-50">
                         <!-- Section Tittle -->
                         <div class="section-tittle mb-35">
@@ -139,8 +139,8 @@
                         <p>Dalam memperingati bulan kemerdekaan Indonesia, kami dari <b>FORMASI 103</b> dan dengan seizin Ketua RT.001/RW.003 akan menyelenggarakan kegiatan seperti:</p>
                     </div>
                     <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-10">
-                            <div class="single-caption mb-20 align-items-start">
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="single-caption mb-5 align-items-start">
                                 <div class="caption-icon pt-3">
                                     <span class="fas fa-location-dot"></span>
                                 </div>
@@ -149,9 +149,7 @@
                                     <p>Jalan Protokol RT.001 / RW.003<br>Kel. Kembaran Kulon, Purbalingga<br>Jawa Tengah, Indonesia</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-10">
-                            <div class="single-caption mb-20 align-items-start">
+                            <div class="single-caption mb-5 align-items-start">
                                 <div class="caption-icon pt-3">
                                     <span class="fas fa-calendar-days"></span>
                                 </div>
@@ -163,17 +161,52 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="single-caption mb-20 align-items-start">
+                                <div class="caption-icon pt-3">
+                                    <span class="fas fa-people-pulling"></span>
+                                </div>
+                                <div class="caption">
+                                    <h5>Jenis Lomba</h5>
+                                    <blockquote class="mt-3 ps-2 border-start border-2 border-primary">
+                                        <h5>Lomba Bapak-bapak</h5>
+                                        <ol class="list-styled">
+                                            <li>103 CUP (Sepak Bola)</li>
+                                        </ol>
+                                    </blockquote>
+                                    <blockquote class="mt-3 ps-2 border-start border-2 border-warning">
+                                        <h5>Lomba Ibu-ibu / Dawis</h5>
+                                        <ol class="list-styled">
+                                            <li>Cerdas Cermat</li>
+                                            <li>Estafet Tepung</li>
+                                            <li>Estafet Air</li>
+                                        </ol>
+                                    </blockquote>
+                                    <blockquote class="mt-3 ps-2 border-start border-2 border-success">
+                                        <h5>Lomba Anak</h5>
+                                        <ol class="list-styled">
+                                            <?php
+                                                $competitions = $database->query("SELECT * FROM competitions");
+                                                foreach($competitions['data'] as $competition){
+                                                    echo "<li>{$competition['name']}</li>";
+                                                }
+                                            ?>
+                                        </ol>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <a href="https://forms.gle/PwsLRz85nXzgUN7Y7" class="btn mt-50 d-block d-lg-inline-block">Daftar Lomba Sekarang</a>
                 </div>
-                <div class="col-lg-6 col-md-12">
+                <div class="col-lg-4 col-md-12 d-none d-lg-block">
                     <!-- about-img -->
                     <div class="about-img ">
                         <div class="about-font-img d-none">
                             <img src="assets/img/gallery/about2.png" alt="">
                         </div>
                         <div class="about-back-img ">
-                            <img src="assets/img/about.png" alt="">
+                            <img src="assets/img/about.png" class="img-fluid" alt="">
                         </div>
                     </div>
                 </div>
