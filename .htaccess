@@ -1,3 +1,4 @@
+Options -Indexes
 RewriteEngine on
 
 RewriteRule ^klasemen$ klasemen.php [L]

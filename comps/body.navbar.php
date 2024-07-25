@@ -1,7 +1,7 @@
 <header>
     <!--? Header Start -->
     <div class="header-area">
-        <div class="main-header header-sticky">
+        <div class="main-header header-sticky shadow-sm">
             <div class="container-fluid">
                 <div class="row align-items-center">
                     <!-- Logo -->
