@@ -29,10 +29,10 @@
         <div class="screen collapse show" data-screen="home">
           <div class="text-center mb-4">
               <h2>LIVE SCORE</h2>
-              <h5>Perlombaan HUT ke-78 Republik Indonesia</h5>
+              <h5>Perlombaan HUT ke-79 Republik Indonesia</h5>
           </div>
           <div class="row">
-              <div class="col-md-4">
+              <div class="col-md-4 cursor-pointer" onclick="remotePress1()">
                 <div class="card mt-4">
                   <div class="card-body">
                     <div class="d-flex">
@@ -74,7 +74,7 @@
           </div>
           <div class="mt-5 text-center">
             <small class="opacity-25">
-              &copy; Copyright 2023 Fauzan. All Rights Reserved.
+              &copy; Copyright 2024 Fauzan. All Rights Reserved.
             </small>
           </div>
         </div>
@@ -110,17 +110,21 @@
 <?php include_once("./comps/script.footer.php"); ?>
 <script>
   $(window).on("keyup", function(e){
-    switch(e.which){
+    switch(e.keyCode){
       case 49:
-        changeScreen("klasemen");
-        setTimeout(getKlasemen, 500);
-        // getKlasemen();
+        remotePress1();
         break;
       case 48:
         changeScreen("home");
         break;
     }
   });
+
+  function remotePress1(){
+    changeScreen("klasemen");
+    setTimeout(getKlasemen, 500);
+    // getKlasemen();
+  }
 
   function changeScreen(screenName){
     var $screen = $(".screen[data-screen='"+screenName+"']");

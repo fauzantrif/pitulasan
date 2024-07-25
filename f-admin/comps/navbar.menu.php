@@ -10,7 +10,7 @@
             <!-- <img src="./assets/img/logo-ct-dark.png" class="navbar-brand-img h-100" alt="main_logo"> -->
             <div class="text-center">
               <img src="../assets/img/logo/logo.png" alt="Logo FORMASI 103">
-              <small class="d-block">Administrasi Acara HUT RI ke-78</small>
+              <small class="d-block">Administrasi Acara HUT RI ke-79</small>
             </div>
             <!-- <span class="ms-1 font-weight-bold">FORMASI 103</span> -->
           </a>
@@ -68,6 +68,14 @@
                   <i class="ni ni-trophy text-dark text-sm opacity-10"></i>
                 </div>
                 <span class="nav-link-text ms-1">Live Score</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="./score-board.php?_">
+                <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                  <i class="ni ni-notification-70 text-dark text-sm opacity-10"></i>
+                </div>
+                <span class="nav-link-text ms-1">Score Board</span>
               </a>
             </li>
             <?php /*

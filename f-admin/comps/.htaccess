@@ -1,1 +1,6 @@
+Order Allow,Deny
 Deny from all
+
+<Files "score-board.controller.php">
+    Allow from all
+</Files>
