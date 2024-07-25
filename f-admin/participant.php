@@ -43,13 +43,13 @@
           }
           break;
         case "kel":
-          $search_query = "WHERE grouping = '{$prefix_search}'";
+          $search_query = "WHERE `grouping` = '{$prefix_search}'";
           break;
         case "tim":
           $prefix_search = intval($prefix_search);
           if(!$prefix_search) $prefix_search = "NULL";
           $search_query = "WHERE team = {$prefix_search}";
-          $orderBy_query = "ORDER BY grouping DESC";
+          $orderBy_query = "ORDER BY `grouping` DESC";
           break;
       }
     }
