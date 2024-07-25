@@ -86,7 +86,7 @@
               <div class="position-relative bg-gradient-primary h-100 m-3 px-7 border-radius-lg d-flex flex-column justify-content-center overflow-hidden" style="background-image: url('./assets/img/hut-ri-illustration.jpg');
           background-size: cover;">
                 <span class="mask bg-gradient-dark opacity-6"></span>
-                <img class="mt-5 position-relative" src="./assets/img/hut-ri-78.png" alt="HUT RI ke-78">
+                <img class="mt-5 position-relative" src="./assets/img/hut-ri-79.png" alt="HUT RI ke-79">
                 <h4 class="text-white font-weight-bolder position-relative">Dirgahayu Republik Indonesia!</h4>
                 <p class="text-white position-relative">Mari kita kenang semua jasa pahlawan masa lalu yang berjuang untuk kemerdekaan Indonesia.</p>
               </div>

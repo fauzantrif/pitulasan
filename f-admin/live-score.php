@@ -21,7 +21,7 @@
             <img src="../assets/img/logo/logo.png" alt="Logo FORMASI 103">
           </div>
           <div>
-            <img src="../assets/img/logo/logo_78.png" alt="Logo 78 Indonesiaku" height="60">
+            <img src="./assets/img/hut-ri-79.color.png" alt="Logo 79 Indonesiaku" height="60">
           </div>
         </div>
       </div>

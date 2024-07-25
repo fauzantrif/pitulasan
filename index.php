@@ -245,14 +245,14 @@
                     </div>
                     <a href="https://forms.gle/PwsLRz85nXzgUN7Y7" class="btn mt-50 d-block d-lg-inline-block">Daftar Lomba Sekarang</a>
                 </div>
-                <div class="col-lg-4 col-md-12 d-none d-lg-block">
+                <div class="col-lg-4 col-md-12">
                     <!-- about-img -->
                     <div class="about-img ">
                         <div class="about-font-img d-none">
                             <img src="assets/img/gallery/about2.png" alt="">
                         </div>
                         <div class="about-back-img ">
-                            <img src="assets/img/about.png" class="img-fluid" alt="">
+                            <img src="f-admin/assets/img/hut-ri-79.color.png" class="img-fluid" alt="">
                         </div>
                     </div>
                 </div>
