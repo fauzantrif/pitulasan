@@ -128,6 +128,14 @@
     <!--? About Law Start-->
     <section class="about-low-area section-padding2" id="start-explore">
         <div class="container">
+            <div class="alert alert-warning mb-5 d-none">
+                <h3>BATAS AKHIR PENDAFTARAN</h3>
+                <p class="mb-0">
+                    Pendaftaran lomba akan ditutup <span class="momentjs" data-tgl="2024-08-04 23:59:59">...</span> (<strong>Minggu, 4 Agustus 2024 pukul 23:59</strong>).
+                    Bagi yang belum mendaftar, silahkan tap pada tombol <a href="https://forms.gle/PwsLRz85nXzgUN7Y7" class="text-primary">Daftar</a> atau hubungi panitia.
+                </p>
+                <p class="mb-0">Terima kasih.</p>
+            </div>
             <div class="row">
                 <div class="col-lg-8 col-md-12">
                     <div class="about-caption mb-50">
@@ -153,11 +161,48 @@
                                 <div class="caption-icon pt-3">
                                     <span class="fas fa-calendar-days"></span>
                                 </div>
-                                <div class="caption">
-                                    <h5>Waktu</h5>
-                                    <p><b>Perlombaan</b>: 10 - 11 Agustus 2024</p>
-                                    <p><b>Panggung Hiburan</b>: 16 Agustus 2024</p>
-                                    <p><b>Jalan Sehat</b>: 18 Agustus 2024</p>
+                                <div class="caption flex-fill pe-2 pe-md-0">
+                                    <h5 class="mb-3">Jadwal Kegiatan</h5>
+                                    <div class="card mb-2 flex-lg-row text-center">
+                                        <div class="card-header">
+                                            <p><b>103 CUP</b></p>
+                                        </div>
+                                        <div class="card-body py-2 align-self-center">
+                                            <p>5 - 10 Agustus 2024</p>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-2 flex-lg-row text-center">
+                                        <div class="card-header">
+                                            <p><b>Perlombaan</b></p>
+                                        </div>
+                                        <div class="card-body py-2 align-self-center">
+                                            <p>10 - 11 Agustus 2024</p>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-2 flex-lg-row text-center">
+                                        <div class="card-header">
+                                            <p><b>Panggung Hiburan</b></p>
+                                        </div>
+                                        <div class="card-body py-2 align-self-center">
+                                            <p>16 Agustus 2024</p>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-2 flex-lg-row text-center">
+                                        <div class="card-header">
+                                            <p><b>Jalan Sehat Bersama</b></p>
+                                        </div>
+                                        <div class="card-body py-2 align-self-center">
+                                            <p>18 Agustus 2024</p>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-2 flex-lg-row text-center">
+                                        <div class="card-header">
+                                            <p><b>Pengumuman Pemenang<br>Rumah Sehat</b></p>
+                                        </div>
+                                        <div class="card-body py-2 align-self-center">
+                                            <p>18 Agustus 2024</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -180,6 +225,7 @@
                                             <li>Cerdas Cermat</li>
                                             <li>Estafet Tepung</li>
                                             <li>Estafet Air</li>
+                                            <li>Rumah Sehat</li>
                                         </ol>
                                     </blockquote>
                                     <blockquote class="mt-3 ps-2 border-start border-2 border-success">
