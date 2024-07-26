@@ -225,6 +225,7 @@
                                             <li>Cerdas Cermat</li>
                                             <li>Estafet Tepung</li>
                                             <li>Estafet Air</li>
+                                            <li>Merias Wajah</li>
                                             <li>Rumah Sehat</li>
                                         </ol>
                                     </blockquote>
@@ -301,46 +302,6 @@
                         <h2>Tunggu apa lagi?</h2>
                         <p>Ayo bentuk tim dan berlomba untuk kemerdekaan!</p>
                         <a href="https://forms.gle/PwsLRz85nXzgUN7Y7" class="btn mt-3 d-block d-lg-inline-block">Daftar Lomba Sekarang</a>
-                    </div>
-                </div>
-            </div>
-            <div class="row d-none">
-                <div class="col-xl-6 col-lg-6 col-md-6">
-                    <div class="home-blog-single mb-30">
-                        <div class="blog-img-cap">
-                            <div class="blog-img">
-                                <img src="assets/img/gallery/home-blog1.png" alt="">
-                                <!-- Blog date -->
-                                <div class="blog-date text-center">
-                                    <span>24</span>
-                                    <p>Now</p>
-                                </div>
-                            </div>
-                            <div class="blog-cap">
-                                <p>|   Physics</p>
-                                <h3><a href="blog_details.html">Footprints in Time is perfect House in Kurashiki</a></h3>
-                                <a href="blog_details.html" class="more-btn">Read more »</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-6">
-                    <div class="home-blog-single mb-30">
-                        <div class="blog-img-cap">
-                            <div class="blog-img">
-                                <img src="assets/img/gallery/home-blog2.png" alt="">
-                                <!-- Blog date -->
-                                <div class="blog-date text-center">
-                                    <span>24</span>
-                                    <p>Now</p>
-                                </div>
-                            </div>
-                            <div class="blog-cap">
-                                <p>|   Physics</p>
-                                <h3><a href="blog_details.html">Footprints in Time is perfect House in Kurashiki</a></h3>
-                                <a href="blog_details.html" class="more-btn">Read more »</a>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
