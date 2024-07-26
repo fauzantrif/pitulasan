@@ -128,7 +128,7 @@
     <!--? About Law Start-->
     <section class="about-low-area section-padding2" id="start-explore">
         <div class="container">
-            <div class="alert alert-warning mb-5 d-none">
+            <div class="alert alert-warning mb-5">
                 <h3>BATAS AKHIR PENDAFTARAN</h3>
                 <p class="mb-0">
                     Pendaftaran lomba akan ditutup <span class="momentjs" data-tgl="2024-08-04 23:59:59">...</span> (<strong>Minggu, 4 Agustus 2024 pukul 23:59</strong>).
