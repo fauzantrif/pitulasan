@@ -52,7 +52,14 @@
                             </div>
                             <div class="d-flex justify-content-center mt-4">
                                 <div>
-                                    <a href="" class="btn bg-primary">Peraturan Pertandingan</a>
+                                    <h4>Peraturan Pertandingan</h4>
+                                    <ol class="list-styled">
+                                        <li>Setiap tim terdiri dari 5 pemain (1 kiper + 4 pemain lainnya)</li>
+                                        <li>Waktu babak utama pertandingan adalah <b>2 x 15 menit</b></li>
+                                        <li>Jika dalam waktu pertandingan skor tim masih imbang/seri, pertandingan akan diberi waktu tambahan <b>2 x 5 menit</b></li>
+                                        <li>Jika dalam waktu tambahan skor tim masih imbang/seri, pertandingan akan diakhiri dengan babak pinalti</li>
+                                        <li>Keputusan wasit pada pertandingan tidak bisa diganggu gugat</li>
+                                    </ol>
                                 </div>
                             </div>
                         </div>
