@@ -94,6 +94,23 @@
                                     ?>
                                 </div>
                                 <?php } ?>
+                                <div class="mt-5">
+                                    <small>
+                                        <div class="d-flex mt-1">
+                                            <div class="me-1 text-end">
+                                                <span class="text-danger" style="display: inline-block; width: 20px;">*)</span>
+                                            </div>
+                                            <div class="flex-fill">
+                                                Pengkategorian peserta SD:
+                                                <ul>
+                                                    <li><b>SD Baru</b>: Kelas 1 - Kelas 2</li>
+                                                    <li><b>SD Junior</b>: Kelas 3 - Kelas 4</li>
+                                                    <li><b>SD Senior</b>: Kelas 5 - Kelas 6</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </small>
+                                </div>
                             </div>
                         </div>
                     </div>
