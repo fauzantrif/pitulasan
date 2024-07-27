@@ -17,8 +17,8 @@
                                 <nav>
                                     <ul id="navigation">
                                         <li><a href="./">Beranda</a></li>
-                                        <li><a href="./klasemen">Klasemen</a></li>
-                                        <!-- <li><a href="./peserta">Calon Peserta <sup class="text-danger">BARU!</sup></a></li> -->
+                                        <!-- <li><a href="./klasemen">Klasemen</a></li> -->
+                                        <li><a href="./peserta">Calon Peserta <sup class="text-danger">!</sup></a></li>
                                         <li><a href="./103-cup">103 Cup</a></li>
                                         <li><a href="#">Galeri</a>
                                             <ul class="submenu">
