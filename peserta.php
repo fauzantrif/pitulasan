@@ -74,7 +74,7 @@
                                             </div>
                                             <div class="fs-5 me-2 text-end">
                                                 <div class="small" style="font-size: 0.75rem; line-height: 1.10;">Terdaftar</div>
-                                                <span class="momentjs fs-6" data-tgl="<?= $participant_rank['date_added'] ?>">
+                                                <span class="momentjs small" data-tgl="<?= $participant_rank['date_added'] ?>">
                                                     <i class="fa-solid fa-circle-notch fa-spin"></i>
                                                 </span>
                                             </div>
