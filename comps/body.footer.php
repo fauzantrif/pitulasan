@@ -25,7 +25,7 @@
                     <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
                         <!-- Footer Bottom Tittle -->
                         <div class="footer-tittle-bottom">
-                            <span><?= $database->numRows("competitions") ?> <sup class="text-danger rounded-circle fs-6">+4</sup></span>
+                            <span><?= $database->numRows("competitions") ?> <sup class="text-danger rounded-circle fs-6">+6</sup></span>
                             <p>Perlombaan</p>
                         </div>
                     </div>
