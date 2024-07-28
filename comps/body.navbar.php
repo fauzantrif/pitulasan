@@ -27,7 +27,7 @@
                                         </li>
                                         <li class="d-none"><a href="contact.html">Kontak</a></li>
                                         <li class="d-block d-lg-none">
-                                            <button href="https://forms.gle/PwsLRz85nXzgUN7Y7" class="btn header-btn mt-2 w-100">Daftar Sekarang</button>
+                                            <a href="https://forms.gle/PwsLRz85nXzgUN7Y7" class="btn header-btn text-white p-2 py-4 mt-2 w-100">Daftar Sekarang</a>
                                         </li>
                                     </ul>
                                 </nav>
