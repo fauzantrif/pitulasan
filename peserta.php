@@ -47,9 +47,20 @@
                                 <?php
                                     $participant_groups = $database->query("SELECT `grouping` FROM participant GROUP BY `grouping` ORDER BY `grouping` ASC");
                                     foreach($participant_groups['data'] as $participant_group){
+                                        $idListGroup = "list-group-" . md5($participant_group['grouping']);
                                 ?>
-                                <h4 class="my-4 mt-5"><?= $participant_group['grouping'] ?></h4>
-                                <div class="list-group shadow">
+                                <div class="d-flex flex-column flex-md-row align-items-center justify-content-between my-4 mt-5">
+                                    <div class="mb-2 mb-md-0">
+                                        <h4 class="mb-0"><?= $participant_group['grouping'] ?></h4>
+                                    </div>
+                                    <div class="">
+                                        <div class="input-group mb-0" data-search="<?= $idListGroup ?>">
+                                            <input type="search" class="form-control shadow-none" placeholder="Cari di <?= $participant_group['grouping'] ?>">
+                                            <button class="btn p-2 px-3 rounded-end" type="button"><i class="fas fa-search"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group shadow" id="<?= $idListGroup ?>">
                                     <?php
                                             $participant_ranks = $database->query("SELECT participant.*, teams.name AS team_name, teams.logo AS team_logo, COALESCE(SUM(competition_transactions.point), 0) AS total_points, COUNT(competition_transactions.id) AS matches_count FROM participant LEFT JOIN competition_transactions ON participant.id = competition_transactions.id_participant LEFT JOIN teams ON teams.id = participant.team WHERE participant.grouping = '{$participant_group['grouping']}' GROUP BY participant.id ORDER BY total_points DESC");
                                             $p = 0;
@@ -63,10 +74,10 @@
                                                 <span class="fs-2"><?= $p ?></span>
                                             </div>
                                             <div class="flex-fill me-4">
-                                                <div><?= $participant_rank['fullname'] ?></div>
+                                                <div data-search-enabled="true"><?= $participant_rank['fullname'] ?></div>
                                                 <small class="opacity-75">
                                                     <ul class="list-inline">
-                                                        <li class="list-inline-item"><?= $participant_rank['callname'] ?></li>
+                                                        <li class="list-inline-item" data-search-enabled="true"><?= $participant_rank['callname'] ?></li>
                                                         <li class="list-inline-item">&bull;</li>
                                                         <li class="list-inline-item">Tim: <?= ($participant_rank['team_name'] !== null) ? $participant_rank['team_name'] : "-" ?></li>
                                                     </ul>
@@ -143,6 +154,23 @@
         }
         setInterval(getUpdateTime, 3000);
         getUpdateTime();
+
+        $("[data-search]").each(function(){
+            var $listData = $(this).attr("data-search");
+            var $searchComp = $(this).find("input");
+            $(this).find("button").on("click", function(e){
+                var $searchValue = $searchComp.val().toLowerCase();
+                $("#" + $listData + " a.list-group-item").filter(function() {
+                    // console.log("Searching: ", $searchValue, "on", $(this));
+                    $(this).toggle( $(this).find("[data-search-enabled]").text().toLowerCase().indexOf($searchValue) > -1 )
+                });
+            });
+            $searchComp.on("search", function(e){
+                // if(e.which === 13){
+                    $(this).next().click();
+                // }
+            });
+        });
     </script>
     
     </body>
