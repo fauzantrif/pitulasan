@@ -47,7 +47,7 @@
                         <div class="tab-pane fade show active" id="klasemen-timnlomba" role="tabpanel" aria-labelledby="home-tab">
                             <div class="row">
                                 <div class="col-12 text-center">
-                                    <img src="./assets/img/Grafik-Pertandingan.png?_103" class="img-fluid" alt="Grafik pertandingan">
+                                    <img src="./assets/img/Grafik-Pertandingan.png?_match2" class="img-fluid" alt="Grafik pertandingan">
                                 </div>
                             </div>
                             <div class="d-flex justify-content-center mt-4">
