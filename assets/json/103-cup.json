@@ -7,16 +7,46 @@
                 "match-name": "Pertandingan 1",
                 "match-time": "20:00 WIB",
                 "team-1-name": "SENIN",
-                "team-1-score": 0,
+                "team-1-score": 4,
                 "team-2-name": "KAMIS",
-                "team-2-score": 0,
+                "team-2-score": 2,
                 "current-time": 0,
                 "penalty": false,
-                "match-events": [],
-                "match-events-example": [
+                "match-events-example": [],
+                "match-events": [
+                    {
+                        "minute": 5,
+                        "player": "Anjar",
+                        "team": 1,
+                        "event": "goal"
+                    },
+                    {
+                        "minute": 16,
+                        "player": "Purwantoro",
+                        "team": 2,
+                        "event": "goal"
+                    },
+                    {
+                        "minute": 21,
+                        "player": "Azhar",
+                        "team": 2,
+                        "event": "goal"
+                    },
                     {
                         "minute": 23,
-                        "player": "Sumanto",
+                        "player": "Anjar",
+                        "team": 1,
+                        "event": "goal"
+                    },
+                    {
+                        "minute": 28,
+                        "player": "Anas",
+                        "team": 1,
+                        "event": "goal"
+                    },
+                    {
+                        "minute": 29,
+                        "player": "Sutaryo",
                         "team": 1,
                         "event": "goal"
                     }
