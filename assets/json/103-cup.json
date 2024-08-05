@@ -10,7 +10,7 @@
                 "team-1-score": 4,
                 "team-2-name": "KAMIS",
                 "team-2-score": 2,
-                "current-time": 0,
+                "current-time": 30,
                 "penalty": false,
                 "match-events-example": [],
                 "match-events": [
@@ -56,12 +56,67 @@
                 "match-name": "Pertandingan 2",
                 "match-time": "21:00 WIB",
                 "team-1-name": "SABTU",
-                "team-1-score": 0,
+                "team-1-score": 6,
                 "team-2-name": "MINGGU",
-                "team-2-score": 0,
-                "current-time": 0,
+                "team-2-score": 3,
+                "current-time": 30,
                 "penalty": false,
-                "match-events": []
+                "match-events": [
+                    {
+                        "minute": 4,
+                        "player": "Danif",
+                        "team": 1,
+                        "event": "goal"
+                    },
+                    {
+                        "minute": 7,
+                        "player": "Danif",
+                        "team": 1,
+                        "event": "goal"
+                    },
+                    {
+                        "minute": 11,
+                        "player": "Budiono",
+                        "team": 1,
+                        "event": "goal"
+                    },
+                    {
+                        "minute": 12,
+                        "player": "Budiono",
+                        "team": 1,
+                        "event": "goal"
+                    },
+                    {
+                        "minute": 18,
+                        "player": "Budiono (own goal)",
+                        "team": 2,
+                        "event": "goal"
+                    },
+                    {
+                        "minute": 21,
+                        "player": "Sartiko Aziz",
+                        "team": 2,
+                        "event": "goal"
+                    },
+                    {
+                        "minute": 25,
+                        "player": "Sartiko Aziz",
+                        "team": 2,
+                        "event": "goal"
+                    },
+                    {
+                        "minute": 26,
+                        "player": "Nurudlolam",
+                        "team": 1,
+                        "event": "goal"
+                    },
+                    {
+                        "minute": 28,
+                        "player": "Danif",
+                        "team": 1,
+                        "event": "goal"
+                    }
+                ]
             }
         ]
     },
