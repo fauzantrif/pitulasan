@@ -132,9 +132,8 @@
                 <h3>BATAS AKHIR PENDAFTARAN</h3>
                 <p class="mb-0">
                     Pendaftaran lomba sudah ditutup <span class="momentjs" data-tgl="2024-08-04 23:59:59">...</span> (<strong>Minggu, 4 Agustus 2024 pukul 23:59</strong>).
-                    Terima kasih atas partisipasinya.
                 </p>
-                <p class="mb-0">Terima kasih.</p>
+                <p class="mb-0">Terima kasih atas partisipasinya.</p>
             </div>
             <div class="row">
                 <div class="col-lg-8 col-md-12">
