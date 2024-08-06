@@ -131,8 +131,8 @@
             <div class="alert alert-warning mb-5">
                 <h3>BATAS AKHIR PENDAFTARAN</h3>
                 <p class="mb-0">
-                    Pendaftaran lomba akan ditutup <span class="momentjs" data-tgl="2024-08-04 23:59:59">...</span> (<strong>Minggu, 4 Agustus 2024 pukul 23:59</strong>).
-                    Bagi yang belum mendaftar, silahkan tap pada tombol <a href="https://forms.gle/PwsLRz85nXzgUN7Y7" class="text-primary">Daftar</a> atau hubungi panitia.
+                    Pendaftaran lomba sudah ditutup <span class="momentjs" data-tgl="2024-08-04 23:59:59">...</span> (<strong>Minggu, 4 Agustus 2024 pukul 23:59</strong>).
+                    Terima kasih atas partisipasinya.
                 </p>
                 <p class="mb-0">Terima kasih.</p>
             </div>
