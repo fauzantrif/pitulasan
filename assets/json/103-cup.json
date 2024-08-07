@@ -171,7 +171,7 @@
                 "match-time": "21:00 WIB",
                 "team-1-name": "JUM'AT",
                 "team-1-score": 2,
-                "team-2-name": "FORMASI",
+                "team-2-name": "UTARA-13",
                 "team-2-score": 6,
                 "current-time": 40,
                 "penalty": false,
@@ -236,23 +236,103 @@
                 "match-name": "Semi-Final 1",
                 "match-time": "20:00 WIB",
                 "team-1-name": "SENIN",
-                "team-1-score": 0,
+                "team-1-score": 3,
                 "team-2-name": "SABTU",
-                "team-2-score": 0,
-                "current-time": 0,
+                "team-2-score": 2,
+                "current-time": 30,
                 "penalty": false,
-                "match-events": []
+                "match-events": [
+                    {
+                        "minute": 6,
+                        "player": "Sutaryo",
+                        "team": 1,
+                        "event": "goal"
+                    },
+                    {
+                        "minute": 13,
+                        "player": "Suhada",
+                        "team": 2,
+                        "event": "goal"
+                    },
+                    {
+                        "minute": 14,
+                        "player": "Solatin (own goal)",
+                        "team": 1,
+                        "event": "goal"
+                    },
+                    {
+                        "minute": 26,
+                        "player": "Edwin",
+                        "team": 1,
+                        "event": "goal"
+                    },
+                    {
+                        "minute": 28,
+                        "player": "Solatin",
+                        "team": 2,
+                        "event": "goal"
+                    }
+                ]
             },
             {
                 "match-name": "Semi-Final 2",
                 "match-time": "21:00 WIB",
                 "team-1-name": "RABU",
-                "team-1-score": 0,
-                "team-2-name": "FORMASI",
-                "team-2-score": 0,
-                "current-time": 0,
+                "team-1-score": 3,
+                "team-2-name": "UTARA-13",
+                "team-2-score": 5,
+                "current-time": 30,
                 "penalty": false,
-                "match-events": []
+                "match-events": [
+                    {
+                        "minute": 7,
+                        "player": "Juan",
+                        "team": 2,
+                        "event": "goal"
+                    },
+                    {
+                        "minute": 8,
+                        "player": "Aldi",
+                        "team": 2,
+                        "event": "goal"
+                    },
+                    {
+                        "minute": 12,
+                        "player": "Aldi",
+                        "team": 2,
+                        "event": "goal"
+                    },
+                    {
+                        "minute": 16,
+                        "player": "Juan",
+                        "team": 2,
+                        "event": "goal"
+                    },
+                    {
+                        "minute": 16,
+                        "player": "Hafiz (own goal)",
+                        "team": 1,
+                        "event": "goal"
+                    },
+                    {
+                        "minute": 22,
+                        "player": "Ade [amin]",
+                        "team": 1,
+                        "event": "goal"
+                    },
+                    {
+                        "minute": 23,
+                        "player": "Ponidi",
+                        "team": 1,
+                        "event": "goal"
+                    },
+                    {
+                        "minute": 29,
+                        "player": "Dani",
+                        "team": 2,
+                        "event": "goal"
+                    }
+                ]
             }
         ]
     },
@@ -263,9 +343,9 @@
             {
                 "match-name": "Final",
                 "match-time": "20:00 WIB",
-                "team-1-name": "-",
+                "team-1-name": "SENIN",
                 "team-1-score": 0,
-                "team-2-name": "-",
+                "team-2-name": "UTARA-13",
                 "team-2-score": 0,
                 "current-time": 0,
                 "penalty": false,
