@@ -42,6 +42,9 @@
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" id="klasemen-peserta-tab" data-bs-toggle="tab" data-bs-target="#klasemen-peserta" type="button" role="tab" aria-controls="profile" aria-selected="false">Hasil</button>
                         </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="klasemen-topscore-tab" data-bs-toggle="tab" data-bs-target="#klasemen-topscore" type="button" role="tab" aria-controls="topscore" aria-selected="false">Top Score</button>
+                        </li>
                     </ul>
                     <div class="tab-content pt-4" id="myTabContent">
                         <div class="tab-pane fade show active" id="klasemen-timnlomba" role="tabpanel" aria-labelledby="home-tab">
@@ -148,6 +151,55 @@
                                     <?php } ?>
                                 </div>
                                 <?php } ?>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="klasemen-topscore" role="tabpanel" aria-labelledby="klasemen-topscore-tab">
+                            <div class="row">
+                                <div class="col-12 mt-3 table-responsive">
+                                    <table class="table table-striped">
+                                        <thead class="table-primary" style="--bs-table-bg: #2e0e8c; --bs-table-color: #fff;">
+                                            <tr class="text-center align-middle">
+                                                <th style="width: 50px">Pos</th>
+                                                <th style="width: 120px">Tim</th>
+                                                <th>Nama Pemain</th>
+                                                <th style="width: 80px">Menang</th>
+                                                <th style="width: 80px">Kalah</th>
+                                                <th style="width: 80px">Goal</th>
+                                                <th style="width: 100px">Own Goal</th>
+                                                <th style="width: 100px">Points</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <?php
+                                                $file_csv = "./assets/json/Klasemen Pemain 103-Cup - Sheet1.csv";
+                                                if(is_file($file_csv)){
+                                                    $csv = file_get_contents($file_csv);
+                                                    $csv_rows = str_getcsv($csv, "\n");
+                                                    foreach($csv_rows as $csv_row){
+                                                        $csv_col = str_getcsv($csv_row);
+                                            ?>
+                                            <tr class="align-middle">
+                                                <td class="text-end"><?= $csv_col[0] ?></td>
+                                                <td><?= $csv_col[1] ?></td>
+                                                <td><?= $csv_col[2] ?></td>
+                                                <td class="text-center"><?= $csv_col[3] ?></td>
+                                                <td class="text-center"><?= $csv_col[4] ?></td>
+                                                <td class="text-center"><?= $csv_col[5] ?></td>
+                                                <td class="text-center"><?= $csv_col[6] ?></td>
+                                                <td class="text-center"><?= $csv_col[7] ?></td>
+                                            </tr>
+                                            <?php } } ?>
+                                        </tbody>
+                                    </table>
+                                    <div class="mt-3">
+                                        <small class="opacity-75">
+                                            Perhitungan point:
+                                            <strong>
+                                                ((Menang + Goal) x 160) - ((Kalah + Own Goal) x 80)
+                                            </strong>
+                                        </small>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
